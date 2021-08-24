@@ -1,0 +1,25 @@
+﻿@page
+@using System.Runtime.InteropServices
+@model TucDemo.Pages.RandomNumberModel
+@{
+}
+
+<h2>Ditt nummer är, </h2>
+@if (Model.RandomNumber > 200000)
+{
+    <h3>Stort: @Model.RandomNumber</h3>
+}
+else if (Model.RandomNumber > 100000)
+{
+    <h3>Ganska stort: @Model.RandomNumber</h3>
+}
+else
+{
+    <h3>Litet: @Model.RandomNumber</h3>
+}
+
+
+<p>Klockan är @Model.Tid</p>
+
+<hr />
+<a asp-page="/Players">Till listan med spelare</a>

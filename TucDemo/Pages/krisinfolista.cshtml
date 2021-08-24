@@ -1,0 +1,14 @@
+﻿@page
+@model TucDemo.Pages.krisinfolistaModel
+@{
+}
+<ul>
+    @foreach (var item in Model.Items)
+    {
+        <li>
+            <a asp-page="/KrisInfoArticle" asp-route-articleid="@item.Id">
+                @item.Title
+            </a>
+        </li>
+    }
+</ul>

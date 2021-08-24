@@ -1,0 +1,13 @@
+﻿@page
+@model TucDemo.Pages.PlayersModel
+@{
+}
+<ul type="none">
+    
+    @foreach (var playerName in Model.Players)
+    {
+        <li>@playerName</li>
+    }
+</ul>
+
+<a asp-page="/RandomNumber">Till nummergenereraren</a>
